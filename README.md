@@ -46,7 +46,7 @@
 | Product · 产品 | What it does · 做什么 | ⭐ |
 |------|------|:--:|
 | 🛒 [**AliExpress Auto Listing**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing)<br>🛒 [**速卖通自动上架**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) | 1688 采集 → 店小秘 ERP 填表 → 速卖通发布，全自动<br>1688 sourcing → Dianxiaomi ERP → AliExpress, fully automated | [⭐](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) |
-| 🧠 [**Expert Builder**](https://github.com/xiaoyaotsyx-dotcom/expert-panel)<br>🧠 [**自动化专家工坊**](https://github.com/xiaoyaotsyx-dotcom/expert-panel) | 你定人设，我们搞定浏览器操控。3 分钟创建一个 AI 专家<br>You define the persona. We handle browser control. 3 min to build an expert | [⭐](https://github.com/xiaoyaotsyx-dotcom/expert-panel) |
+| 🧠 [**Auto Experts**](https://github.com/xiaoyaotsyx-dotcom/auto-experts)<br>🧠 [**自动化 AI 专家**](https://github.com/xiaoyaotsyx-dotcom/auto-experts) | AI 专家不只聊天——它操控你的浏览器、填表单、分析数据、在你休息时替你干活<br>AI experts that don't just chat — they browse, fill forms, crunch data, and work while you sleep | [⭐](https://github.com/xiaoyaotsyx-dotcom/auto-experts) |
 
 ---
 
