@@ -4,8 +4,8 @@
 </p>
 
 <p align="center">
-  <strong>Turn your AI assistant into an expert teammate.</strong><br>
-  <strong>AI 助手 × 专家人设 × 浏览器操控 = 能聊更能干的 AI 专家队友</strong>
+  <strong>Your AI can chat. We make it work.</strong><br>
+  <strong>给你的 AI 装上手脚——不再只会聊天，真的能干活。</strong>
 </p>
 
 <p align="center">
@@ -15,68 +15,94 @@
 
 ---
 
-## Our Products · 我们的产品
+## What is Rigi AI Commons? · 这是什么？
 
-**Two standalone products. Each can be starred independently.**
-**两个独立产品，各自打星。**
+**A collection of AI agent skills that turn your assistant from a chatbot into a doer.** Each skill gives your AI the ability to control a browser — search the web, fill forms, upload files, post on social media, extract data. No API keys. No coding. Everything runs on your own computer, using your own Chrome, your own logins.
 
-| Product · 产品 | Repo · 仓库 | In one sentence · 一句话 |
-|------|------|--------|
-| 🛒 **AliExpress Auto Listing** | [aliexpress-listing](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) | 1688 sourcing → Dianxiaomi ERP → AliExpress — fully automated.<br>1688采集→店小秘填表→速卖通发布，全自动 |
-| 🧠 **Rigi Expert Panel** | [expert-panel](https://github.com/xiaoyaotsyx-dotcom/expert-panel) | Create AI experts in 3 minutes. Each expert browses, searches, and fills forms out of the box.<br>3分钟创建AI专家，天生会开浏览器、查数据、填表单 |
+**一套 AI Agent 技能包，让你的 AI 助手从"陪聊"变成"干活"。** 每个技能赋予 AI 浏览器操控能力——搜索网页、填写表单、上传文件、发布社媒、提取数据。不需要 API，不需要编程。一切在你自己的电脑上运行，用你自己的 Chrome、你自己的登录态。
 
 ---
 
-## How It Works · 工作方式
+## Who Is This For? · 谁需要这个？
 
-```
-┌──────────────────┐    ┌──────────────────┐
-│ AliExpress       │    │ Expert Panel     │
-│ Auto Listing     │    │                  │
-│ Fill · Upload ·  │    │ Search · Analyze │
-│ Publish          │    │ · Post           │
-└────────┬─────────┘    └────────┬─────────┘
-         │                       │
-         └───────────┬───────────┘
-                     │
-      ┌──────────────▼──────────────┐
-      │      shared/ infrastructure │
-      │  CDP · Browser · Social     │
-      └─────────────────────────────┘
-```
-
----
-
-## What's in this repo · 本仓库内容
-
-| Directory · 目录 | Contains · 内容 |
+| You are... · 你是... | You probably... · 你可能... |
 |------|------|
-| `shared/` | Shared infrastructure used by all products — CDP connection, browser automation, social media posting.<br>所有产品共用的基础设施：CDP连接、浏览器操控、社媒发布 |
+| 🛒 跨境卖家 | 每天手动填店小秘 2-3 小时，想自动化 |
+| 📈 个人投资者 | 想系统化分析股票，但没时间手动拉数据 |
+| 📱 内容创作者 | 想一键发 X/微博/知乎/小红书，不用挨个平台贴 |
+| 🔒 开发者/安全从业者 | 想快速审计竞品网站前端安全 |
+| 🧠 AI 深度用户 | 想给 AI 定制专业人设 + 实操能力，不止聊天 |
+
+> **If you've ever thought "I wish my AI could just open a browser and do this for me" — this is for you.**
+> **如果你曾经想过"要是 AI 能帮我打开浏览器把这事干了就好了"——就是你。**
+
+---
+
+## Our Products · 产品
+
+**Two products. One engine. Each independently starred.**
+**两个产品。一套引擎。各自独立打星。**
+
+| Product · 产品 | What it does · 做什么 | ⭐ |
+|------|------|:--:|
+| 🛒 [**AliExpress Auto Listing**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing)<br>🛒 [**速卖通自动上架**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) | 1688 采集 → 店小秘 ERP 填表 → 速卖通发布，全自动<br>1688 sourcing → Dianxiaomi ERP → AliExpress, fully automated | [⭐](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) |
+| 🧠 [**Expert Builder**](https://github.com/xiaoyaotsyx-dotcom/expert-panel)<br>🧠 [**自动化专家工坊**](https://github.com/xiaoyaotsyx-dotcom/expert-panel) | 你定人设，我们搞定浏览器操控。3 分钟创建一个 AI 专家<br>You define the persona. We handle browser control. 3 min to build an expert | [⭐](https://github.com/xiaoyaotsyx-dotcom/expert-panel) |
+
+---
+
+## How It Works · 怎么做到的？
+
+```
+  你的 AI 助手                     Rigi 技能包                    真实世界
+  Your AI Assistant              Rigi Skill Pack               Real World
+
+  ┌──────────┐              ┌────────────────────┐         ┌──────────────┐
+  │ "上品"    │──────────────▶│ CDP 连接            │─────────▶│ 店小秘 ERP    │
+  │ "分析特斯拉"│              │ 浏览器操控           │         │ X / 微博     │
+  │ "审计这个站"│              │ 社媒发布             │         │ 知乎 / 小红书 │
+  └──────────┘              └────────────────────┘         └──────────────┘
+                                    │
+                            ┌───────▼───────┐
+                            │ 你的 Chrome    │
+                            │ 你的登录态     │
+                            │ 数据不出电脑   │
+                            └───────────────┘
+```
+
+> 🔒 **Privacy-first.** Nothing uploaded to any cloud. Your browser. Your logins. Your data.
+> 🔒 **隐私优先。** 不上传任何云端。你的浏览器。你的登录态。你的数据。
+
+---
+
+## What's in This Repo? · 本仓库有什么？
+
+| Directory · 目录 | Purpose · 用途 |
+|------|------|
+| `shared/` | Infrastructure shared by all products — CDP connection, browser automation, social media posting.<br>所有产品共用的基础设施：CDP 连接、浏览器操控、社媒发布 |
 | `tools/` | Utility tools — data verification, etc.<br>辅助工具：数据验证等 |
 
+> 💡 两个产品仓库各自引用这里的 `shared/` 基础设施。你不需要克隆这个仓库来使用产品——直接去各自仓库下载即可。
+> 💡 Both product repos reference `shared/` from here. You don't need to clone this repo — go directly to each product.
+
 ---
 
-## Quick Start · 快速开始
+## Quick Start · 上手（30 秒）
 
 ```bash
-# Pick a product and tell your AI to load it.
 # 选一个产品，告诉你的 AI 加载它。
 
-# AliExpress listing
-"Load aliexpress-listing skill. 上品。"
+# 速卖通上架
+"加载 aliexpress-listing skill。上品。"
 
-# Investment research
-"Load investment-research skill. Analyze Tesla."
+# 让 AI 帮你分析股票
+"加载 investment-research skill。分析特斯拉。"
 ```
 
-> 💡 Works with **Hermes Agent / Claude Code / Cursor** — any AI that runs Python + controls a browser via CDP.
 > 💡 支持 **Hermes Agent / Claude Code / Cursor**——能跑 Python + 操控浏览器的 AI 助手都行。
 
 ---
 
 ## License · 许可
-
-**AGPLv3 Dual License · 双许可**
 
 | Use Case · 使用场景 | License · 许可 |
 |------|---------|
