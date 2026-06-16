@@ -1,78 +1,77 @@
 # Rigi AI Commons — AI Agent Skills & Workflows
 
-**Practical AI without the hype. Skills that do real work.**
-
-Rigi AI Commons is a collection of open-source AI agent skills and automated workflows for everyday people. From cross-border e-commerce listing automation to stock investment research, from legal document analysis to recruitment screening — each workflow is built, tested, and refined against real-world scenarios.
+**Plug-and-play AI automation for everyday people.** No coding required. No hype. Just practical, battle-tested workflows that run on your own computer through your own AI assistant.
 
 ---
 
-# Rigi AI Commons — AI智能体技能与自动化工作流
+# Rigi AI Commons — AI自动化技能与工作流
 
-**不画饼、不吹牛。只做真正能帮你干活的AI。**
-
-Rigi AI Commons 是一系列面向普通人的AI智能体技能包和自动化工作流合集。从跨境上架到股票投研，从法律分析到招聘筛选——每个工作流都经过真实场景的实战验证。
+**即装即用的AI自动化工作流。** 不需编程，没有噱头。只有经过实战验证的技能包，在你的AI助手上本地运行，数据不出你的电脑。
 
 ---
 
-## 🚀 Featured Products
+## What We Build
 
-### aliexpress-listing-automation
-**Automate AliExpress product listing from 1688 → Dianxiaomi ERP**
-
-Turn 40-60 minutes of manual data entry into a few minutes of automated work. AI agent controls your real Chrome browser, filling titles, attributes, SKU pricing, images, and descriptions step by step.
+Professional-grade AI agent workflows that automate real business tasks — translating product listings, filling ERP forms, pricing SKUs, editing images at scale. Everything a cross-border seller does manually for hours, now done in minutes.
 
 ---
 
-## 🚀 当前产品
+## 我们做什么
 
-### aliexpress-listing-automation
-**速卖通AI上架 · 从1688到店小秘全自动**
-
-把每个产品40-60分钟的手动填表变成几分钟的全自动操作。AI操控你的真实Chrome浏览器，逐步完成标题翻译、属性填写、SKU定价、图片处理和描述编辑。
+专业级的AI Agent工作流，自动化真实的商业任务——翻译产品标题、填写ERP表单、批量定价SKU、修改图片尺寸。跨境卖家花几个小时手动做的事，现在交给AI几分钟完成。
 
 ---
 
-## 📂 What's Inside Each Skill
+## Current Products
 
-- **SKILL.md** — The main workflow that your AI assistant loads and executes
-- **references/** — Detailed cheat sheets, pitfall guides, and component maps
-- **scripts/** — Python automation scripts for complex operations
-- **README.md** — Quick-start guide in both English and Chinese
-
----
-
-## 🔧 Supported AI Platforms
-
-| Platform | Support |
-|----------|:-------:|
-| Hermes Agent | ✅ |
-| Claude Code | ✅ |
-| OpenAI Codex | ✅ |
-| Cursor | ✅ |
-| Open Interpreter | ✅ |
+| Product | Description | Status |
+|---------|-------------|:------:|
+| [aliexpress-listing-automation](./aliexpress-listing-automation) | Full AliExpress listing pipeline: 1688 -> Dianxiaomi ERP -> Pending Publish | v1.0 |
 
 ---
 
-## ⚠️ Commercial Use Requires License
+## 现有产品
 
-**This is NOT free software for commercial use.**
-
-- Personal, non-commercial use: Free to download and use
-- Commercial use, SaaS, embedding in paid products: Requires a commercial license
-
----
-
-## ⚠️ 商用必须获得授权
-
-- 个人非商业用途：免费下载使用
-- 公司商用、搭建付费服务、嵌入商业产品：必须购买商业授权
+| 产品 | 描述 | 状态 |
+|------|------|:----:|
+| [速卖通AI上架技能包](./aliexpress-listing-automation) | 速卖通全流程上架：1688采集 -> 店小秘填表 -> 待发布 | v1.0 |
 
 ---
 
-## 📬 Contact
+## Supported AI Platforms
 
-📕 Xiaohongshu: **@瑞吉AI人民公社**
+Hermes Agent / Claude Code / OpenAI Codex / Cursor / Open Interpreter.
+Any AI assistant capable of executing Python scripts and controlling a browser via CDP.
+
+---
+
+## 支持的AI平台
+
+凡能执行Python脚本、通过CDP操控浏览器的AI助手均可使用。
+
+---
+
+## Licensing — Commercial Use Requires Authorization
+
+**Personal, non-commercial use: Free.**
+
+**Corporate commercial use, building paid services, embedding in commercial products: MUST purchase a commercial license.**
+
+---
+
+## 授权声明
+
+**个人非商业使用：免费。**
+
+**公司商用、搭建付费服务、嵌入商业产品：必须购买商业授权。**
+
+---
+
+## Contact
+
+RedNote: @瑞吉AI人民公社
+
+---
 
 *Reject AI echo chambers. Democratize practical AI for everyone.*
-
-*拒绝AI小圈子自嗨，推动实用AI全面普惠。*
+*拒绝 AI 小圈子自嗨，推动实用 AI 全面普惠。*
