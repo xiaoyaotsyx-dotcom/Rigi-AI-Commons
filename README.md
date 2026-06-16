@@ -46,7 +46,7 @@
 | Product · 产品 | What it does · 做什么 | ⭐ |
 |------|------|:--:|
 | 🛒 [**AliExpress Auto Listing**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing)<br>🛒 [**速卖通自动上架**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) | 1688 采集 → 店小秘 ERP 填表 → 速卖通发布，全自动<br>1688 sourcing → Dianxiaomi ERP → AliExpress, fully automated | [⭐](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) |
-| 🧠 [**Auto Experts**](https://github.com/xiaoyaotsyx-dotcom/auto-experts)<br>🧠 [**自动化 AI 专家**](https://github.com/xiaoyaotsyx-dotcom/auto-experts) | AI 专家不只聊天——它操控你的浏览器、填表单、分析数据、在你休息时替你干活<br>AI experts that don't just chat — they browse, fill forms, crunch data, and work while you sleep | [⭐](https://github.com/xiaoyaotsyx-dotcom/auto-experts) |
+| 🧠 [**Auto Experts**](https://github.com/xiaoyaotsyx-dotcom/auto-experts)<br>🧠 [**自动化 AI 专家**](https://github.com/xiaoyaotsyx-dotcom/auto-experts) | Not just another chatbot — a persona-driven AI expert that controls your browser, fills forms, analyzes data, and works while you sleep.<br>不只是聊天——人设驱动的 AI 专家，操控你的浏览器、填表单、分析数据、在你睡觉时替你干活 | [⭐](https://github.com/xiaoyaotsyx-dotcom/auto-experts) |
 
 ---
 
@@ -81,20 +81,22 @@
 | `shared/` | Infrastructure shared by all products — CDP connection, browser automation, social media posting.<br>所有产品共用的基础设施：CDP 连接、浏览器操控、社媒发布 |
 | `tools/` | Utility tools — data verification, etc.<br>辅助工具：数据验证等 |
 
-> 💡 两个产品仓库各自引用这里的 `shared/` 基础设施。你不需要克隆这个仓库来使用产品——直接去各自仓库下载即可。
-> 💡 Both product repos reference `shared/` from here. You don't need to clone this repo — go directly to each product.
+> 💡 Both product repos reference `shared/` from here. You don't need to clone this repo to use the products — go directly to each product repo.
+> 💡 两个产品仓库各自引用这里的 `shared/` 基础设施。不需要克隆这个仓库——直接去各自仓库下载即可。
 
 ---
 
 ## Quick Start · 上手（30 秒）
 
 ```bash
-# 选一个产品，告诉你的 AI 加载它。
+# Pick a product, tell your AI to load it. · 选一个产品，告诉你的 AI 加载它。
 
-# 速卖通上架
+# AliExpress auto listing · 速卖通上架
+"Load aliexpress-listing skill. Let's publish a product."
 "加载 aliexpress-listing skill。上品。"
 
-# 让 AI 帮你分析股票
+# Stock analysis · 股票分析
+"Load investment-research skill. Analyze Tesla."
 "加载 investment-research skill。分析特斯拉。"
 ```
 
