@@ -88,7 +88,7 @@
 ## Contact · 联系
 
 - 📕 RedNote · 小红书: [@瑞吉AI人民公社](https://www.xiaohongshu.com/user/profile/42084313799)
-- 📧 xiaoyao@aibook.online
+- 📧 Walter.x@qq.com
 
 ---
 
