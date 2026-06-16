@@ -81,8 +81,7 @@
 | Use Case · 使用场景 | License · 许可 |
 |------|---------|
 | Personal, non-commercial · 个人非商业 | AGPLv3 ✅ Free · 免费 |
-| Company ≤5 seats · 企业≤5人 | AGPLv3 ✅ Free · 免费 |
-| Company 6+ seats / Commercial · 企业6+人/商用 | [Contact us · 联系我们](mailto:xiaoyao@aibook.online) |
+| Any company or commercial use · 任何企业/商用 | [Contact us · 联系我们](mailto:Walter.x@qq.com) |
 
 ---
 
