@@ -7,167 +7,121 @@
 </p>
 
 <p align="center">
-  <strong>Turn your AI assistant into an expert teammate.</strong><br>
-  Plug-and-play agent skills for real business. No coding. No hype.
+  <strong>AI 助手 × 专家人设 × 浏览器操控 = 能聊更能干的 AI 专家队友</strong><br>
+  Plug-and-play AI expert skills. Each expert can browse, search, fill forms, and post — autonomously.
 </p>
 
 <p align="center">
   <a href="https://github.com/xiaoyaotsyx-dotcom/Rigi-AI-Commons/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-AGPLv3-blue.svg" alt="License"></a>
   <a href="#"><img src="https://img.shields.io/github/stars/xiaoyaotsyx-dotcom/Rigi-AI-Commons" alt="Stars"></a>
   <a href="#"><img src="https://img.shields.io/github/last-commit/xiaoyaotsyx-dotcom/Rigi-AI-Commons" alt="Last Commit"></a>
-  <a href="https://xiaoyaotsyx-dotcom.github.io/Rigi-AI-Commons/"><img src="https://img.shields.io/badge/docs-📖_Read-5b5fe7" alt="Docs"></a>
-  <br>
-  <sub>中文 ｜ English</sub>
 </p>
 
 ---
 
-<p align="center">
-  <strong>AI 助手即专家队友。</strong><br>
-  即装即用的 AI Agent 技能包，不需编程，没有噱头。<br>
-  数据不出你的电脑，工作流实战验证。
-</p>
+## 🤔 这不是又一套 Prompt 合集
+
+市面上有很多 "AI Prompt 大全"。它们是**话术**——告诉 AI 怎么说。
+
+Rigi 做的是 **自动化专家**——给 AI 配人设 + 配浏览器操控能力，让它**真的动手干活**：
+
+> "分析这只股票" → 开浏览器抓三源数据 → 交叉验证 → 出研报  
+> "上架这个产品" → 1688 采集 → 店小秘填表 → 速卖通发布  
+> "审这个网站" → 扒前端源码 → 扫敏感信息 → 出安全报告
 
 ---
 
-## 🤔 What Problem Does This Solve?
+## 🏗 架构
 
-You have an AI assistant (Hermes / Claude Code / Cursor). It can answer questions — but you want it to **do real work**:
-
-- "Translate these 200 AliExpress listings into English — but format them for the ERP too."
-- "Pull 1688 product data, fill in Dianxiaomi, and publish to AliExpress."  
-- "Analyze this stock and write a research report."
-- "Check this legal document for risks."
-
-That's not a chatbot. That's an **agent with a workflow**.
-
-**Rigi AI Commons gives your AI assistant those workflows** — battle-tested, step-by-step, ready to run.
-
----
-
-## 🧩 这解决什么问题？
-
-你的 AI 助手会聊天，但你想要它**真的干活**：
-
-- 「把 200 个速卖通标题翻译成英文，顺便填好 ERP 格式」
-- 「1688 采集 → 店小秘填表 → 速卖通上架」
-- 「分析这只股票，写研报」
-- 「审这份合同，标出风险点」
-
-聊天机器人做不了这些。**有工作流的 Agent 才行。**
-
-Rigi AI Commons 就是给 AI 助手配**工作流**——经过实战、一步步跑通、拿来就用。
+```
+┌────────────────────────────────────────┐
+│           Rigi Expert System            │
+│                                        │
+│  👤 投研专家    🛒 电商专家   🔒 安全专家  │  ← 5 个专家
+│  🕵️ 竞品专家    📝 (自定义专家)         │
+│                                        │
+│  ────────────────────────────────────  │
+│                                        │
+│  🔌 CDP 连接    🌐 浏览器操控  📱 社媒发布 │  ← 基础设施
+│                                        │
+└────────────────────────────────────────┘
+```
 
 ---
 
 ## ⚡ Quick Start
 
 ```bash
-# No install. No pip. No npm.
-# Just download the skill file and tell your AI assistant to load it.
+# 选择一个专家，告诉你的 AI 助手加载它
 
-# Example: AliExpress Listing Automation
-# 1. Download the folder
-# 2. Tell your Hermes/Claude: "Load aliexpress-listing-automation skill"
-# 3. Say: "上品" (list product)
+# 投研分析
+"加载 investment-research skill，分析特斯拉"
+
+# 安全审计
+"加载 security-audit skill，看看这个网站有没有信息泄露"
+
+# 速卖通上架
+"加载 aliexpress-listing skill，上品"
 ```
 
-> 💡 Works with **Hermes Agent**, **Claude Code**, **OpenAI Codex**, **Cursor**, **Open Interpreter**. Any AI that can run Python + control a browser via CDP.
+> 💡 支持 **Hermes Agent / Claude Code / OpenAI Codex / Cursor**。任何能跑 Python + 操控浏览器的 AI 助手。
 
 ---
 
-## 📦 Products
+## 📦 产品
 
-| Skill | What It Does | Platform | Status |
-|-------|-------------|----------|--------|
-| 🛒 **AliExpress Listing Automation** | 1688采集 → 店小秘ERP填表 → 速卖通待发布 | AliExpress | ✅ v1.0 |
-| 📈 Stock Research | Multi-source data → Cross-validation → Research report | A-Share/US/HK | 🚧 Coming |
-| ⚖️ Legal Review | Document scanning → Risk flagging → Compliance check | PRC Law | 🚧 Coming |
+### 🧠 专家（experts/）
 
----
+| 专家 | 能做什么 | 状态 |
+|------|---------|------|
+| 📈 **投研分析** | 三源数据→交叉验证→五 Skill 并行→四份研报 | ✅ v1.0 |
+| 🛒 **速卖通上架** | 1688采集→店小秘ERP填表→速卖通待发布 | ✅ v1.0 |
+| 🔒 **安全审计** | 扒前端源码→扫 API key/手机号/云 ID→出报告 | ✅ v1.0 |
+| 🕵️ **竞品分析** | 逆向AI产品→提取提示词架构→分析工作流设计 | ✅ v1.0 |
+| 🎨 **专家模板** | 3 分钟创建一个新专家（内嵌 CDP 能力） | ✅ 框架 |
 
-## 🏗 Architecture
+### ⚙️ 基础设施（core/）
 
-```
-┌─────────────────────────────────────┐
-│          Your AI Assistant           │
-│  (Hermes / Claude Code / Cursor)     │
-└──────────────┬──────────────────────┘
-               │  "Load skill: aliexpress-listing"
-               ▼
-┌─────────────────────────────────────┐
-│         Rigi AI Commons Skill        │
-│  ┌──────────┐  ┌──────────┐        │
-│  │ Workflow │  │  Prompts │        │
-│  │  Steps   │  │  Rules   │        │
-│  └──────────┘  └──────────┘        │
-│  ┌──────────┐  ┌──────────┐        │
-│  │  Python  │  │  CDP     │        │
-│  │  Scripts │  │ Browser  │        │
-│  └──────────┘  └──────────┘        │
-└──────────────┬──────────────────────┘
-               │
-               ▼
-┌─────────────────────────────────────┐
-│          Your Computer               │
-│  Chrome (your login) + Your Data    │
-│  Nothing leaves your machine        │
-└─────────────────────────────────────┘
-```
+| 模块 | 说明 |
+|------|------|
+| 🔌 **CDP 快速连接** | Chrome 调试模式三步诊断连接 |
+| 🌐 **通用浏览器操控** | 导航/点击/填表/上传/抓取/反检测 |
+| 📱 **社媒全自动发布** | X/微博/知乎/头条/小红书/Facebook 六平台 |
 
-> 🔒 **Privacy-first.** Your browser, your logins, your data. Nothing uploaded to any cloud.
+### 🔧 工具（tools/）
+
+| 工具 | 说明 |
+|------|------|
+| 📊 **数据验证** | 股价 PE 验算 + 三源交叉验证 |
 
 ---
 
-## 📖 Documentation
+## 🌐 支持的 AI 平台
 
-- [📘 Full Documentation](https://xiaoyaotsyx-dotcom.github.io/Rigi-AI-Commons/)
-- [🚀 Getting Started Guide](https://xiaoyaotsyx-dotcom.github.io/Rigi-AI-Commons/getting-started)
-- [📦 All Skills Catalog](https://xiaoyaotsyx-dotcom.github.io/Rigi-AI-Commons/skills)
-
----
-
-## 🌐 Supported Platforms
-
-| Platform | Status | Notes |
-|----------|--------|-------|
-| Hermes Agent | ✅ Full | Primary target. CDP + Python. |
-| Claude Code | ✅ Compatible | Load as skill file. |
-| Cursor | ✅ Compatible | Load as `.cursorrules` skill. |
-| OpenAI Codex | ✅ Compatible | GitHub-native. |
-| Open Interpreter | ✅ Compatible | Python execution. |
+| 平台 | 状态 |
+|------|------|
+| Hermes Agent | ✅ 主力平台 |
+| Claude Code | ✅ |
+| Cursor | ✅ |
+| OpenAI Codex | ✅ |
 
 ---
 
 ## 📄 License
 
-**Dual License — AGPLv3 + Commercial**
+**AGPLv3 双许可**
 
-- 🏠 **Personal, non-commercial use:** Free. Forever. [AGPLv3](LICENSE)
-- 🏢 **Business commercial use:** [Commercial license required](mailto:xiaoyao@aibook.online)
-
-| Use Case | License |
+| 使用场景 | License |
 |----------|---------|
-| Individual learning / personal projects | AGPLv3 ✅ Free |
-| Company internal use (≤5 seats) | AGPLv3 ✅ Free |
-| Company internal use (6+ seats) | Commercial required |
-| Building paid services / SaaS | Commercial required |
-| Embedding in commercial products | Commercial required |
-
----
-
-## 🤝 Contributing
-
-We welcome contributions! See [CONTRIBUTING.md](CONTRIBUTING.md).
-
-> 🎯 **Good First Issues** tagged for newcomers.
+| 个人非商业 | AGPLv3 ✅ 免费 |
+| 企业 ≤5 人 | AGPLv3 ✅ 免费 |
+| 企业 6+ 人 / 商用 | 商业授权 required |
 
 ---
 
 ## 📬 Contact
 
-- 📕 RedNote (小红书): [@瑞吉AI人民公社](https://www.xiaohongshu.com/user/profile/42084313799)
-- 🐦 X/Twitter: [@xiaoy17305382](https://x.com/xiaoy17305382)
+- 📕 小红书: [@瑞吉AI人民公社](https://www.xiaohongshu.com/user/profile/42084313799)
 - 📧 Email: xiaoyao@aibook.online
 
 ---
