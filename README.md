@@ -3,6 +3,9 @@
   <img src="https://placehold.co/600x150/ffffff/5b5fe7?text=Rigi+AI+Commons&font=Montserrat" width="500">
 </p>
 
+# Rigi AI Commons — AI Agent Skills & Browser Automation Tools
+# 开源 AI Agent 技能包 & 浏览器自动化工具箱
+
 <p align="center">
   <strong>Your AI can chat. We make it work.</strong><br>
   <strong>给你的 AI 装上手脚——不再只会聊天，真的能干活。</strong>
@@ -45,8 +48,8 @@
 
 | Product · 产品 | What it does · 做什么 | ⭐ |
 |------|------|:--:|
-| 🛒 [**AliExpress Auto Listing**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing)<br>🛒 [**速卖通自动上架**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) | 1688 采集 → 店小秘 ERP 填表 → 速卖通发布，全自动<br>1688 sourcing → Dianxiaomi ERP → AliExpress, fully automated | [⭐](https://github.com/xiaoyaotsyx-dotcom/aliexpress-listing) |
-| 🧠 [**Auto Experts**](https://github.com/xiaoyaotsyx-dotcom/auto-experts)<br>🧠 [**自动化 AI 专家**](https://github.com/xiaoyaotsyx-dotcom/auto-experts) | Not just another chatbot — a persona-driven AI expert that controls your browser, fills forms, analyzes data, and works while you sleep.<br>不只是聊天——人设驱动的 AI 专家，操控你的浏览器、填表单、分析数据、在你睡觉时替你干活 | [⭐](https://github.com/xiaoyaotsyx-dotcom/auto-experts) |
+| 🛒 [**AliExpress Auto Listing**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-auto-listing-skill)<br>🛒 [**速卖通自动上架**](https://github.com/xiaoyaotsyx-dotcom/aliexpress-auto-listing-skill) | 1688 采集 → 店小秘 ERP 填表 → 速卖通发布，全自动<br>1688 sourcing → Dianxiaomi ERP → AliExpress, fully automated | [⭐](https://github.com/xiaoyaotsyx-dotcom/aliexpress-auto-listing-skill) |
+| 🧠 [**Rigi Auto Experts**](https://github.com/xiaoyaotsyx-dotcom/rigi-auto-experts-ai-agent)<br>🧠 [**自动化 AI 专家**](https://github.com/xiaoyaotsyx-dotcom/rigi-auto-experts-ai-agent) | Not just another chatbot — a persona-driven AI expert that controls your browser, fills forms, analyzes data, and works while you sleep.<br>不只是聊天——人设驱动的 AI 专家，操控你的浏览器、填表单、分析数据、在你睡觉时替你干活 | [⭐](https://github.com/xiaoyaotsyx-dotcom/rigi-auto-experts-ai-agent) |
 
 ---
 
@@ -92,15 +95,16 @@
 # Pick a product, tell your AI to load it. · 选一个产品，告诉你的 AI 加载它。
 
 # AliExpress auto listing · 速卖通上架
-"Load aliexpress-listing skill. Let's publish a product."
-"加载 aliexpress-listing skill。上品。"
+"Load aliexpress-auto-listing-skill. Let's publish a product."
+"加载 aliexpress-auto-listing-skill。上品。"
 
 # Stock analysis · 股票分析
 "Load investment-research skill. Analyze Tesla."
 "加载 investment-research skill。分析特斯拉。"
 ```
 
-> 💡 支持 **Hermes Agent / Claude Code / Cursor**——能跑 Python + 操控浏览器的 AI 助手都行。
+> 💡 Works with **Hermes Agent / Claude Code / Cursor** — any AI that can run Python + control a browser via CDP.
+> 💡 支持 **Hermes Agent / Claude Code / Cursor**——能跑 Python + CDP 操控浏览器的 AI 助手都行。
 
 ---
 
